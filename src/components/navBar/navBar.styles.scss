@@ -1,0 +1,70 @@
+.navBar-container {
+  width: 100%;
+  height: 60px;
+  background-color: #dcdddd;
+  display: flex;
+  justify-content: space-around;
+  .navBar {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button {
+      min-width: 40px;
+      height: 35px;
+      background-color: #fbfbf9;
+      border-radius: 10%/20%;
+      width: 17%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    @media screen and (min-width: 600px) {
+      width: 70%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 60%;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 996px) {
+      width: 40%;
+    }
+  }
+  .search-container {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #searchLight {
+    text-align: center;
+      min-width: 90px;
+      height: 30px;
+      border: 1px solid #d1d1d1;
+      font: bold 12px Arial, Helvetica, Sans-serif;
+      color: black;
+      width: 40%;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 5%/30%;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+      -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+      -webkit-transition: all 0.7s ease 0s;
+      -moz-transition: all 0.7s ease 0s;
+      -o-transition: all 0.7s ease 0s;
+      transition: all 0.7s ease 0s;
+      &:focus {
+        outline: none;
+        width: 70%;
+        border-radius: 5%/40%;
+      }
+    }
+  }
+}
+::placeholder {
+  color: #bebebe;
+text-align: center;
+}
